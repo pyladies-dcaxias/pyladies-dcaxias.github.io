@@ -1,4 +1,4 @@
-<div class="col-lg-4">
+<div class="col-lg-4 col-md-3 col-sm-2">
     <div class="blog-post">
         <h2 class="blog-post-title"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
         <p class="blog-post-meta">{{ article.locale_date }} por {% for author in article.authors %}<a href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</p>
