@@ -8,6 +8,10 @@
     width: 100%;
     background-color: #f5f5f5;
 }
+.footer p {
+    padding: 5px;
+    margin: 0 -15px;
+}
 
 ul.icon-links {
     list-style: none;
@@ -31,4 +35,8 @@ a {
 }
 a:hover {
     color: #F298A8 !important;
+}
+
+.link-more {
+    float: right;
 }

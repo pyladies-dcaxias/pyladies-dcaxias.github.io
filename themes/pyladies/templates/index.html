@@ -31,4 +31,16 @@
         </ul>
     </div>
 </div>
+
+<div class="row post-list">
+    {% for article in articles_page.object_list %}
+        <p></p>
+        {% include "includes/article-summary.html" %}
+    {% endfor %}
+</div>
+
+{% if articles_page.has_other_pages() %}
+    {% include "includes/pagination.html" %}
+{% endif %}
+
 {% endblock %}
