@@ -10,6 +10,8 @@ PATH = 'content'
 
 TIMEZONE = 'America/Sao_Paulo'
 
+STATIC_PATHS = ['images', 'media']
+
 DEFAULT_LANG = u'pt'
 
 # Feed generation is usually not desired when developing
