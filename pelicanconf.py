@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Paula Grangeiro'
 SITENAME = u'PyLadies Duque de Caxias'
-SITEURL = ''
+SITEURL = 'http://duquedecaxias.pyladies.com'
 
 PATH = 'content'
 
