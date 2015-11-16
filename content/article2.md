@@ -1,5 +1,5 @@
 Title: 1º Workshop de Python PyLadies Duque de Caxias
-Date: 2015-11-17 16:35
+Date: 2015-11-16 16:35
 Category:   eventos
 Tags: workshops
 Authors: Paula Grangeiro
