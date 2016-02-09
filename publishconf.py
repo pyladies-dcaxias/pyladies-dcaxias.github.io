@@ -12,5 +12,3 @@ from pelicanconf import *
 
 SITEURL = 'http://duquedecaxias.pyladies.com'
 RELATIVE_URLS = False
-
-DELETE_OUTPUT_DIRECTORY = True

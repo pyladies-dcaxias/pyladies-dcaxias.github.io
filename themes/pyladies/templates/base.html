@@ -13,6 +13,8 @@
 </head>
 
 <body>
+
+{% block navbar %}
 <nav class="navbar navbar-default">
     <div class="container">
         <div class="navbar-header">
@@ -33,12 +35,13 @@
         <!-- END: NAVIGATION BAR -->
     </div>
 </nav>
+{% endblock %}
 
 {% block content %}{% endblock %}
 
 <footer class="footer">
     <div class="container">
-        <p>&copy;2015 PyLadies Duque de Caxias. Todos os direitos reservados.</p>
+        <p>©2015 <a href="http://duquedecaxias.pyladies.com">PyLadies Duque de Caxias</a>. Todos os direitos reservados. Tema desenvolvido por <a href="http://www.paulagrangeiro.com.br/">@pgrangeiro</a>.</p>
         <p>PyLadies Duque de Caxias é parte do <a href="http://www.pyladies.com/" target="_blank">PyLadies</a>. PyLadies e o logo PyLadies são marcas registradas da <a href="https://www.python.org" target="_blank">Python Software Foundation</a>.</p>
     </div>
 </footer>

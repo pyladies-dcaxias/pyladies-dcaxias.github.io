@@ -5,10 +5,12 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Paula Grangeiro'
 SITENAME = u'PyLadies Duque de Caxias'
-SITEURL = 'http://duquedecaxias.pyladies.com'
+SITEURL = 'http://localhost:8001/output'
 
 
 PATH = 'content'
+PAGE_URL = 'pages/{slug}/'
+PAGE_SAVE_AS = 'pages/{slug}/index.html'
 
 
 TIMEZONE = 'America/Sao_Paulo'
@@ -35,10 +37,10 @@ from collections import namedtuple
 
 Menu = namedtuple('Menu', ['id', 'name', 'url', 'css_class', 'css_id'])
 items = (
-    (1, 'Home', '/', '', ''),
+    (1, 'Home', '', '', ''),
     (2, 'Sobre', '#about', 'scroller', ''),
     (3, 'Ajude-nos', '#support', 'scroller', ''),
-    (4, 'Recursos', '/resources', '', ''),
+    (4, 'Recursos', '/pages/recursos/', '', ''),
     (5, 'Blog', '', '#', ''),
 )
 

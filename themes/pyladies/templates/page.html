@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block navbar %}
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="{{ SITEURL }}">
+                <img class="logo" alt="PyLadies Logo" src="{{ STATIC_URL }}img/logo.svg">
+            </a>
+        </div>
+        <!-- NAVIGATION BAR -->
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                {% for item in MENU %}
+                <li>
+                    <a class="{{ item.css_class }}" href="{{ SITEURL }}{{ item.url }}">{{ item.name }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <!-- END: NAVIGATION BAR -->
+    </div>
+</nav>
+{% endblock %}
+
+{% block content %}
+<div id="content" class="container">
+<div class="row">
+    <div class="col-lg-12">
+        <h2>{{ page.title }}</h2>
+        <p>{{ page.summary }}</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+    {{ page.content }}
+    </div>
+</div>
+</div>
+{% endblock %}
