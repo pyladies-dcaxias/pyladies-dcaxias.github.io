@@ -40,8 +40,16 @@ items = (
     (1, 'Home', '', '', ''),
     (2, 'Sobre', '#about', 'scroller', ''),
     (3, 'Ajude-nos', '#support', 'scroller', ''),
-    (4, 'Recursos', '/pages/recursos/', '', ''),
-    (5, 'Blog', '', '#', ''),
+    (4, 'Eventos', '#events', 'scroller', ''),
+    (5, 'Recursos', '/pages/recursos/', '', ''),
+    (6, 'Blog', '', '#', ''),
 )
-
 MENU = [Menu(*item) for item in items]
+
+Carousel = namedtuple('Carousel', ['id', 'title', 'sumary', 'url', 'img_path', 'css_class', 'css_id'])
+items = (
+    (1, 'Home', '', '', '', 'first-slide', ''),
+    (2, 'Sobre', '', '', '', 'second-slide', ''),
+    (3, 'Ajude-nos', '', '', '', 'third-slide', ''),
+)
+CAROUSEL = [Carousel(*item) for item in items]
