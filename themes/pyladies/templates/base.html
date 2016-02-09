@@ -1,43 +1,57 @@
 <html lang="{{ DEFAULT_LANG }}">
+
 <head>
-    <meta charset="UTF-8" />
-    <title>{{ SITENAME }}</title>
-    {% block meta %}{% endblock %}
-    {% block css %}
-    <link rel="stylesheet" type="text/css" href="theme/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="theme/css/main.css" />
-    {% endblock %}
+<meta charset="UTF-8" />
+<title>{{ SITENAME }}</title>
+<link rel="icon" href="{{ STATIC_URL }}img/favicon.ico" />
+
+{% block css %}
+<link rel="stylesheet" href="{{ STATIC_URL }}bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="{{ STATIC_URL }}font-awesome/css/font-awesome.min.css" />
+<link rel="stylesheet" href="{{ STATIC_URL }}css/carousel.css" />
+<link rel="stylesheet" href="{{ STATIC_URL }}css/main.css" />
+{% endblock %}
 </head>
 
 <body>
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="{{ SITEURL }}">
-                    <img alt="PyLadies Logo" src="theme/img/pyladies_wordmark_standard_black.png" />
-                </a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    {% for title, link in MENUITEMS %}
-                    <li><a href="{{ link }}">{{ title }}</a></li>
-                    {% endfor %}
-                    {% for p in PAGES %}
-                    <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
-                    {% endfor %}
-                </ul>
-            </div>
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="{{ SITEURL }}">
+                <img class="logo" alt="PyLadies Logo" src="{{ STATIC_URL }}img/logo.svg">
+            </a>
         </div>
-    </nav>
-    <div class="container content">
-        {% block content %}{% endblock %}
+        <!-- NAVIGATION BAR -->
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                {% for item in MENU %}
+                <li>
+                    <a class="{{ item.css_class }}" href="{{ item.url }}">{{ item.name }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <!-- END: NAVIGATION BAR -->
     </div>
-    <footer class="footer">
-        <div class="container">
-            <p>&copy;2015 PyLadies Duque de Caxias. Todos os direitos reservados.</p>
-            <p>PyLadies Duque de Caxias é parte do <a href="http://www.pyladies.com/" target="_blank">PyLadies</a>. PyLadies e o logo PyLadies são marcas registradas da <a href="https://www.python.org" target="_blank">Python Software Foundation</a>.</p>
-        </div>
-    </footer>
+</nav>
+
+<div id="content" class="container">
+    {% block content %}{% endblock %}
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <p>&copy;2015 PyLadies Duque de Caxias. Todos os direitos reservados.</p>
+        <p>PyLadies Duque de Caxias é parte do <a href="http://www.pyladies.com/" target="_blank">PyLadies</a>. PyLadies e o logo PyLadies são marcas registradas da <a href="https://www.python.org" target="_blank">Python Software Foundation</a>.</p>
+    </div>
+</footer>
+
+{% block js %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="{{ STATIC_URL }}bootstrap/js/bootstrap.min.js"></script>
+<script src="{{ STATIC_URL }}js/holder.min.js"></script>
+<script src="{{ STATIC_URL }}js/main.js"></script>
+{% endblock %}
 
 </body>
 </html>
