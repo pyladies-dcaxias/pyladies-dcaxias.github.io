@@ -34,8 +34,13 @@ ul.icon-links li {
     margin-right: 20px;
 }
 
-.vcenter {
-    margin: 7% 0;
+#content img {
+    margin: 0 auto;
+}
+
+#sponsors {
+    align-items: center;
+    display: flex;
 }
 
 /* FOOTER */

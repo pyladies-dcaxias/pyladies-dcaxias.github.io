@@ -39,9 +39,16 @@ Menu = namedtuple('Menu', ['id', 'name', 'url', 'css_class', 'css_id'])
 items = (
     (1, 'Home', '', '', ''),
     (2, 'Sobre', '#about', 'scroller', ''),
-    (3, 'Ajude-nos', '#support', 'scroller', ''),
-    (4, 'Eventos', '#events', 'scroller', ''),
-    (5, 'Recursos', '/pages/recursos/', '', ''),
-    (6, 'Blog', 'https://medium.com/pyladies-duque-de-caxias', '', ''),
+    (3, 'Parceiros', '#sponsors', 'scroller', ''),
+    (4, 'Recursos', '/pages/recursos/', '', ''),
+    (5, 'Blog', 'https://medium.com/pyladies-duque-de-caxias', '', ''),
 )
 MENU = [Menu(*item) for item in items]
+
+Sponsor = namedtuple('Sponsor', ['id', 'name', 'url', 'img_path'])
+items = (
+    (1, 'PyLadies Brasil', 'http://brasil.pyladies.com/', 'img/pyladies.png'),
+    (2, 'PyLadies Rio de Janeiro', 'http://rio.pyladies.com/', 'img/logo-rio.png'),
+    (3, 'Universidade Unigranrio', 'http://www.unigranrio.br/', 'img/logo-unigranrio.png'),
+)
+SPONSORS = [Sponsor(*item) for item in items]

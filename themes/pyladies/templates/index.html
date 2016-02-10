@@ -59,6 +59,19 @@
             <p class="text-justify">Quer saber sobre os nossos últimos encontros? Novidades da comunidade Python? Siga-nos em nosso blog! Basta clicar <a href="https://medium.com/pyladies-duque-de-caxias">aqui</a>.</p>
         </div>
     </div>
+    <div id="sponsors" class="row">
+        <div class="col-lg-12">
+            <h3>Parceiros</h3>
+            <p>Quer nos ajudar na nossa missão de aumentar a diversidade na área tecnológica? Envie-nos um email para <a href="mailto:duquedecaxias@pyladies.com" target="_top">duquedecaxias@pyladies.com</a> e seja um parceiro do PyLadies Duque de Caxias.</p>
+        </div>
+    </div>
+    <div id="sponsors" class="row">
+    {% for item in SPONSORS %}
+        <div class="col-lg-2">
+            <a href="{{ item.url }}" target="_blank"><img class="img-responsive" src="{{ STATIC_URL }}{{ item.img_path }}" alt="{{ item.name }}" title="{{ item.name }}" /></a>
+        </div>
+    {% endfor %}
+    </div>
 </div>
 {% endblock %}
 
