@@ -11,4 +11,5 @@ sys.path.append(os.curdir)
 from pelicanconf import *
 
 SITEURL = 'http://duquedecaxias.pyladies.com'
+STATIC_URL = '/theme/'
 RELATIVE_URLS = False

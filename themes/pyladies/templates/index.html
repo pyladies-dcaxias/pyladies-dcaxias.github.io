@@ -2,14 +2,10 @@
 
 {% block css %}
 {{ super() }}
-<link rel="stylesheet" href="{{ STATIC_URL }}css/carousel.css" />
 <link rel="stylesheet" href="{{ STATIC_URL }}font-awesome/css/font-awesome.min.css" />
 {% endblock %}
 
 {% block content %}
-
-{% include "includes/carousel.html" %}
-
 <div id="content" class="container">
     <div class="row">
         <div class="col-lg-4 col-md-4 col-sm-5">
@@ -71,6 +67,5 @@
 
 {% block js %}
 {{ super() }}
-<script src="{{ STATIC_URL }}js/holder.min.js"></script>
 <script src="{{ STATIC_URL }}js/main.js"></script>
 {% endblock %}

@@ -42,14 +42,6 @@ items = (
     (3, 'Ajude-nos', '#support', 'scroller', ''),
     (4, 'Eventos', '#events', 'scroller', ''),
     (5, 'Recursos', '/pages/recursos/', '', ''),
-    (6, 'Blog', '', '#', ''),
+    (6, 'Blog', 'https://medium.com/pyladies-duque-de-caxias', '', ''),
 )
 MENU = [Menu(*item) for item in items]
-
-Carousel = namedtuple('Carousel', ['id', 'title', 'sumary', 'url', 'img_path', 'css_class', 'css_id'])
-items = (
-    (1, 'Novo site do PyLadies', 'O site do PyLadies Caxias está de cara nova. Bem vind@ à nossa nova casa!', '#about', 'theme/img/img02.png', 'first-slide scroller', ''),
-    (2, 'Sobre', '', '', '', 'second-slide', ''),
-    (3, 'Ajude-nos', '', '', '', 'third-slide', ''),
-)
-CAROUSEL = [Carousel(*item) for item in items]
