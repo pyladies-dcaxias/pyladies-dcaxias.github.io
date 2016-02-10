@@ -32,7 +32,7 @@
         </div>
     </div>
     <div id="events" class="row">
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-md-4">
             <div class="embed-responsive embed-responsive-4by3">
                 <iframe class="embed-responsive-item" src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;height=350&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=vtnpeo5tlcuv0l4jdgq4bpfbn8%40group.calendar.google.com&amp;color=%23B1365F&amp;ctz=America%2FSao_Paulo" style="border-width:0" frameborder="0" scrolling="no"></iframe>
             </div>
@@ -40,7 +40,7 @@
             <p class="text-justify">Todos os nossos eventos são abertos ao público em geral. Não exigimos nenhum conhecimento técnico, qualquer pessoa com algum interesse em Python é encorajada a participar.</p>
             <p class="text-justify">Para saber sobre os próximos encontros do PyLadies no estado do Rio, siga-nos em nossas redes sociais ou adicione o nosso Google Calendar na sua agenda.</p>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-md-4">
             <p><img class="img-responsive" src="{{ STATIC_URL }}img/img01.jpg" /></p>
             <h4 id="support">Envolva-se!</h4>
             <p class="text-justify">Existem diversas maneiras de contribuir com nossa missão: através de divulgação, participando de nossos encontros, realizando doações de materiais ou em dinheiro. Caso você ou sua empresa queiram nos auxiliar, por favor entre em contato conosco através do nosso email <a href="mailto:duquedecaxias@pyladies.com" target="_top">duquedecaxias@pyladies.com</a>.</p>
@@ -53,7 +53,7 @@
                 </form>
             </p>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-md-4">
             <p><img class="img-responsive" src="{{ STATIC_URL }}img/wordmark-dcaxias.png" /></p>
             <h4 id="support">Acompanhe nosso blog</h4>
             <p class="text-justify">Quer saber sobre os nossos últimos encontros? Novidades da comunidade Python? Siga-nos em nosso blog! Basta clicar <a href="https://medium.com/pyladies-duque-de-caxias">aqui</a>.</p>
@@ -67,7 +67,7 @@
     </div>
     <div id="sponsors" class="row">
     {% for item in SPONSORS %}
-        <div class="col-lg-2">
+        <div class="col-lg-2 col-md-3 col-sm-3 col-xs-3">
             <a href="{{ item.url }}" target="_blank"><img class="img-responsive" src="{{ STATIC_URL }}{{ item.img_path }}" alt="{{ item.name }}" title="{{ item.name }}" /></a>
         </div>
     {% endfor %}
