@@ -13,7 +13,11 @@
             <ul class="nav navbar-nav navbar-right">
                 {% for item in MENU %}
                 <li>
+                {% if '#' in item.url %}
                     <a class="{{ item.css_class }}" href="{{ SITEURL }}{{ item.url }}">{{ item.name }}</a>
+                {% else %}
+                    <a class="{{ item.css_class }}" href="{{ item.url }}">{{ item.name }}</a>
+                {% endif %}
                 </li>
                 {% endfor %}
             </ul>

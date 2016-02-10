@@ -37,7 +37,7 @@ from collections import namedtuple
 
 Menu = namedtuple('Menu', ['id', 'name', 'url', 'css_class', 'css_id'])
 items = (
-    (1, 'Home', '', '', ''),
+    (1, 'Home', '/', '', ''),
     (2, 'Sobre', '#about', 'scroller', ''),
     (3, 'Parceiros', '#sponsors', 'scroller', ''),
     (4, 'Recursos', '/pages/recursos/', '', ''),
