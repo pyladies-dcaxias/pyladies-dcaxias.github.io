@@ -1,7 +1,3 @@
-body {
-    padding-bottom: 0 !important;
-}
-
 #content {
     min-height: 72%;
 }
@@ -26,12 +22,6 @@ a:hover {
     color: #F298A8 !important;
 }
 
-/* CAROUSEL */
-.carousel-control:link {
-    color: #fff !important;
-}
-/* END: CAROUSEL */
-
 ul.icon-links {
     list-style: none;
     font-size: 32px;
@@ -42,6 +32,10 @@ ul.icon-links {
 ul.icon-links li {
     float: left;
     margin-right: 20px;
+}
+
+.vcenter {
+    margin: 7% 0;
 }
 
 /* FOOTER */

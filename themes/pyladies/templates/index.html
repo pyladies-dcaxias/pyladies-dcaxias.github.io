@@ -14,7 +14,7 @@
         <div class="col-lg-8 col-md-8 col-sm-7">
             <h2 id="about">print('Welcome!')</h2>
             <p class="text-justify">PyLadies é um grupo internacional de apoio à diversidade. Nosso objetivo é ajudar mais e mais <i>mulheres</i> a tornarem-se membros ativas da comunidade Python. Promovemos workshops, palestras, encontros sociais inclusivos onde todos os interessados em conhecer um pouco mais sobre a linguagem Python são convidados a participar.</p>
-            <p class="text-justify">O PyLadies Duque de Caxias surgiu como um grupo de apoio às <i>mulheres</i> que são profissionais da área tecnológica ou possuem algum interesse no assunto na região. Nós não fazemos distinção de cor, gênero ou idade e não é necessário ter algum conhecimento técnico para participar dos nossos eventos. Basta ter algum interesse em aprender ou em compartilhar conhecimento para comparecer aos nossos encontros.</p>
+            <p class="text-justify">O PyLadies Duque de Caxias surgiu como um grupo de apoio às <i>mulheres</i> que são profissionais da área tecnológica ou possuem algum interesse no assunto na região. Nós não fazemos distinção de cor, gênero ou idade e não é necessário ter conhecimento técnico para participar dos nossos eventos. Basta ter algum interesse em aprender e em compartilhar conhecimento para comparecer aos nossos encontros.</p>
             <ul class="icon-links">
                 <li>
                     <a href="mailto:duquedecaxias@pyladies.com" target="_top" title="Envie-nos um email"><i class="fa fa-envelope"></i></a>
@@ -31,13 +31,20 @@
             </ul>
         </div>
     </div>
-    <div class="row">
-        <div class="col-lg-6">
+    <div id="events" class="row">
+        <div class="col-lg-4">
+            <div class="embed-responsive embed-responsive-4by3">
+                <iframe class="embed-responsive-item" src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;height=350&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=vtnpeo5tlcuv0l4jdgq4bpfbn8%40group.calendar.google.com&amp;color=%23B1365F&amp;ctz=America%2FSao_Paulo" style="border-width:0" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <h4 id="events">Eventos</h4>
+            <p class="text-justify">Todos os nossos eventos são abertos ao público em geral. Não exigimos nenhum conhecimento técnico, qualquer pessoa com algum interesse em Python é encorajada a participar.</p>
+            <p class="text-justify">Para saber sobre os próximos encontros do PyLadies no estado do Rio, siga-nos em nossas redes sociais ou adicione o nosso Google Calendar na sua agenda.</p>
+        </div>
+        <div class="col-lg-4">
+            <p><img class="img-responsive" src="{{ STATIC_URL }}img/img01.jpg" /></p>
             <h4 id="support">Envolva-se!</h4>
-            <p class="text-justify">Existem diversas maneiras de ajudar à comunidade PyLadies: divulgando, participando de nossos eventos, realizando doações. Caso você queira se envolver e possui alguma dúvida ou sugestão, por favor, entre em contato conosco através do nosso email <a href="mailto:duquedecaxias@pyladies.com" target="_top">duquedecaxias@pyladies.com</a>.</p>
+            <p class="text-justify">Existem diversas maneiras de contribuir com nossa missão: através de divulgação, participando de nossos encontros, realizando doações de materiais ou em dinheiro. Caso você ou sua empresa queiram nos auxiliar, por favor entre em contato conosco através do nosso email <a href="mailto:duquedecaxias@pyladies.com" target="_top">duquedecaxias@pyladies.com</a>.</p>
             </p>
-            <p class="text-justify">Para realizar uma doação, basta clicar no botão abaixo. A API do PagSeguro permite que a transação seja feita de diversas formas, inclusive utilizando um cartão de crédito.</p>
-            <p class="text-justify">Todo o dinheiro arrecadado é utilizado na confecção de brindes, flyers, e em diversos outros itens que tornam a experiência de nossos workshops incrível para noss@s participantes.</p>
             <p>
                 <form class="text-center" action="https://pagseguro.uol.com.br/checkout/v2/donation.html" method="post">
                     <input type="hidden" name="currency" value="BRL" />
@@ -46,20 +53,10 @@
                 </form>
             </p>
         </div>
-        <div class="col-lg-6">
-            <p><img class="img-responsive" src="{{ STATIC_URL }}img/img01.jpg" /></p>
-        </div>
-    </div>
-    <div id="events" class="row">
-        <div class="col-lg-6">
-            <div class="embed-responsive embed-responsive-4by3">
-                <iframe class="embed-responsive-item" src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;height=350&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=vtnpeo5tlcuv0l4jdgq4bpfbn8%40group.calendar.google.com&amp;color=%23B1365F&amp;ctz=America%2FSao_Paulo" style="border-width:0" frameborder="0" scrolling="no"></iframe>
-            </div>
-        </div>
-        <div class="col-lg-6">
-            <h4 id="events">Eventos</h4>
-            <p class="text-justify">Todos os nossos eventos são abertos ao público em geral. Não fazemos distinção de idade, cor ou gênero (mas ficaríamos felizes se você puder encorajar a uma <i>mulher</i> a comparecer ao encontro). Também não exigimos nenhum conhecimento técnico, qualquer pessoa com algum interesse em Python é encorajada a participar.</p>
-            <p class="text-justify">Siga-nos em nossas redes sociais para saber sobre as nossas últimas novidades. Você também pode adicionar este calendário do Google ao lado, com a agenda de eventos do PyLadies pelo estado do Rio de Janeiro.</p>
+        <div class="col-lg-4">
+            <p><img class="img-responsive" src="{{ STATIC_URL }}img/wordmark-dcaxias.png" /></p>
+            <h4 id="support">Acompanhe nosso blog</h4>
+            <p class="text-justify">Quer saber sobre os nossos últimos encontros? Novidades da comunidade Python? Siga-nos em nosso blog! Basta clicar <a href="https://medium.com/pyladies-duque-de-caxias">aqui</a>.</p>
         </div>
     </div>
 </div>
