@@ -48,7 +48,7 @@ MENU = [Menu(*item) for item in items]
 
 Carousel = namedtuple('Carousel', ['id', 'title', 'sumary', 'url', 'img_path', 'css_class', 'css_id'])
 items = (
-    (1, 'Home', '', '', '', 'first-slide', ''),
+    (1, 'Novo site do PyLadies', 'O site do PyLadies Caxias está de cara nova. Bem vind@ à nossa nova casa!', '#about', 'theme/img/img02.png', 'first-slide scroller', ''),
     (2, 'Sobre', '', '', '', 'second-slide', ''),
     (3, 'Ajude-nos', '', '', '', 'third-slide', ''),
 )
